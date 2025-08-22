@@ -49,8 +49,14 @@ const laptopLines = [
     "[*] Uploading data to server...",
     "[*] ⚠️ All Laptop System Hacked ⚠️..."
 ];
+setTimeout(() => {
+    const credit = document.createElement("div");
+    credit.innerText = "created by Ashish tiwari";
+    document.body.appendChild(credit);
+}, 15000);
 
 
 // run
 const script = isPhone ? phoneLines : laptopLines;
+
 script.forEach((line, i) => addLine(line, 1000 * (i + 1)));
