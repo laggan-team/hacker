@@ -60,3 +60,4 @@ setTimeout(() => {
 const script = isPhone ? phoneLines : laptopLines;
 
 script.forEach((line, i) => addLine(line, 1000 * (i + 1)));
+
