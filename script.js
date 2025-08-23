@@ -52,7 +52,7 @@ const laptopLines = [
     "[*]Thank you for clicking on the link..."
 ];setTimeout(() => {
     const credit = document.createElement("div");
-    credit.innerText = "your Device is hacked by Ashish tiwari";
+    credit.innerText = "your Device is hacked by Abhishek Dubey";
     document.body.appendChild(credit);
 }, 15000);
 setTimeout(() => {
@@ -66,6 +66,7 @@ setTimeout(() => {
 const script = isPhone ? phoneLines : laptopLines;
 
 script.forEach((line, i) => addLine(line, 1000 * (i + 1)));
+
 
 
 
