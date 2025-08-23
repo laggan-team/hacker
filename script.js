@@ -33,7 +33,8 @@ const phoneLines = [
     "[*] Hacking WhatsApp...",
     "[*] Extracting SMS & Contacts...",
     "[*] Finalizing exploit...",
-    "[*] ⚠️ All Phone System Hacked ⚠️..."
+    "[*] ⚠️ All Phone System Hacked ⚠️...",
+    "[*]Thank you for clicking on the link..."
 ];
 
 
@@ -47,8 +48,13 @@ const laptopLines = [
     "[*] Hacking WhatsApp Desktop...",
     "[*] Extracting Documents...",
     "[*] Uploading data to server...",
-    "[*] ⚠️ All Laptop System Hacked ⚠️..."
-];
+    "[*] ⚠️ All Laptop System Hacked ⚠️...",
+    "[*]Thank you for clicking on the link..."
+];setTimeout(() => {
+    const credit = document.createElement("div");
+    credit.innerText = "created by Ashish tiwari";
+    document.body.appendChild(credit);
+}, 15000);
 
 
 
@@ -56,5 +62,6 @@ const laptopLines = [
 const script = isPhone ? phoneLines : laptopLines;
 
 script.forEach((line, i) => addLine(line, 1000 * (i + 1)));
+
 
 
